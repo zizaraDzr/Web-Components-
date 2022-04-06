@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Word count rating widget</h1>
+    <a
+      href="https://developer.mozilla.org/ru/docs/Web/API/Element/attachShadow"
+      target="_blank"
+      style="font-size: 25px; color: gray"
+      >Пример взят из документации MDN</a
+    >
+
+    <article contenteditable>
+      <h2>Напиши что-нибудь и счетчик внизу будет автоматически меняться. счетчик сделан через веб-компонент</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar
+        sed justo sed viverra. Aliquam ac scelerisque tellus. Vivamus porttitor
+        nunc vel nibh rutrum hendrerit. Donec viverra vestibulum pretium. Mauris
+        at eros vitae ante pellentesque bibendum. Etiam et blandit purus, nec
+        aliquam libero. Etiam leo felis, pulvinar et diam id, sagittis pulvinar
+        diam. Nunc pellentesque rutrum sapien, sed faucibus urna sodales in. Sed
+        tortor nisl, egestas nec egestas luctus, faucibus vitae purus. Ut elit
+        nunc, pretium eget fermentum id, accumsan et velit. Sed mattis velit
+        diam, a elementum nunc facilisis sit amet.
+      </p>
+
+      <p is="word-count"></p>
+    </article>
+
+    
+    <style>
+      progress-bar {
+        --fill-color: red;
+      }
+    </style>
+    <h2 style="outline: 1px solid">
+      Progress bar widget HTML-компонент.
+      <progress-bar percent="65"></progress-bar>
+    </h2>
+
+    <a
+      href="https://github.com/zizaraDzr/Web-Components-"
+      target="_blank"
+      style="font-size: 25px; color: gray"
+      >код можно посмотреть: https://github.com/zizaraDzr/Web-Components-</a
+    >
+    <script src="wordCount.js"></script>
+    <script src="progressBar.js"></script>
+  </body>
+</html>
